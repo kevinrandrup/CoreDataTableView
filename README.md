@@ -57,7 +57,7 @@ Displays an edit button in the top left corner that toggles editing on and off.
     self.tableView.editable = YES;
     
     
-Displays a plux button in the top right corner that creates a new NSManagedObject and .
+Displays a plus button in the top right corner that creates a new NSManagedObject and .
 
     self.tableView.addButton = YES;
     
@@ -70,13 +70,14 @@ Displays a plux button in the top right corner that creates a new NSManagedObjec
 Allow the user to reorder cells when in edit mode.
 
     self.tableView.reOrderable = YES;
+    
     - (void)tableView:(CoreDataTableView *)tableView didReOrderObject:(NSManagedObject *)object atIndexPath:(NSIndexPath*)sourceIndexPath toIndexPath:(NSIndexPath *)newIndexPath
     {
         object.order = newIndexPath.row; //Simplified, but you get the idea.
     }
 
 
-Adds a search bar to search through the tableview;
+Adds a search bar to search through the tableview. Implement the search predicate delegate method.
 
     self.tableView.searchBar = YES;
 
