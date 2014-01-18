@@ -9,7 +9,6 @@ Typical Usage
 1. Create a reference to the tableview.
 2. Open your storboard, create a tableview and set its class to CoreDataTableView.
 3. Set the fetchedResultsController property and the coreDataTableViewDelegate property.
-NSFetchedResultsController
 4. Implement the CoreDataTableViewDelegate protocol
 5. Implement the one required method
 
@@ -47,7 +46,7 @@ Sample Implementation
 More Stuff to do
 ================
 
-Allow the user to delete a cell by swiping - removes the cell and the backing object in Core Data.
+Allows the user to delete a cell by swiping - removes the cell and the backing object in Core Data.
 
     self.tableView.swipeToDelete = YES;
 
@@ -57,7 +56,7 @@ Displays an edit button in the top left corner that toggles editing on and off.
     self.tableView.editable = YES;
     
     
-Displays a plus button in the top right corner that creates a new NSManagedObject and .
+Displays a plus button in the top right corner that creates a new NSManagedObject and calls the delegate method.
 
     self.tableView.addButton = YES;
     
@@ -67,7 +66,7 @@ Displays a plus button in the top right corner that creates a new NSManagedObjec
     }
 
 
-Allow the user to reorder cells when in edit mode.
+Allows the user to reorder cells when in edit mode.
 
     self.tableView.reOrderable = YES;
     
