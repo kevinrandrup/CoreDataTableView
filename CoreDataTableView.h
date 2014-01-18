@@ -52,7 +52,6 @@
 @required //Delegate must provide an method that returns an NSFetchedResultsController.
 - (void)configureCell:(UITableViewCell *)cell withObject:(NSManagedObject *)object forTableView:(CoreDataTableView *)tableView;
 
-//- (NSFetchedResultsController *)fetchedResultsController; //Set the NSFetchedResultsController's delegate to an instance of CoreDataTableView if you wish to implement deletion, insertion, or reOrdering.
 
 @optional //CoreDataTableView implements the following UITableViewDelegate methods, if you want to keep those methods but still want to be notified of any of the following methods, implement them in the coreDataTableViewDelegate
 - (void)accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath inTableView:(CoreDataTableView *)tableView;
