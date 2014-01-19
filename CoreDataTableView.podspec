@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "https://twitter.com/kevinrandrup"
   s.platform     = :ios, '5.0'
 
-  s.source       = { :git => "https://github.com/kevinrandrup/CoreDataTableView.git", :commit => "6455448e076cbb25ef38c0f1c7cab66cf1bff44e" }
+  s.source       = { :git => "https://github.com/kevinrandrup/CoreDataTableView.git", :commit => "a23e99c0163d2cfb0127b92a32343d2c68476c27" }
 
   s.source_files  = 'Classes/CoreDataTableView.{h,m}'
   s.frameworks   = "UIKit", "CoreData"
