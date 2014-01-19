@@ -248,7 +248,7 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
-    if ([self.coreDataTableViewDelegate respondsToSelector:@selector(tableView:shoudlMoveRowAtIndexPath:toIndexPath:)]) {
+    if ([self.coreDataTableViewDelegate respondsToSelector:@selector(tableView:shouldMoveRowAtIndexPath:toIndexPath:)]) {
         if ([self.coreDataTableViewDelegate tableView:self shouldMoveRowAtIndexPath:sourceIndexPath toIndexPath:proposedDestinationIndexPath]) {
             return proposedDestinationIndexPath;
         }
